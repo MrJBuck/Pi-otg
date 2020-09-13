@@ -5,7 +5,7 @@ This will enable a one wire, plug and play solution between the Raspberry Pi 4 a
 # Installation Instructions (Run everything as root)
 **Macbook side:**
 * Copy vnc.sh to /Library/Scripts/
-* Run chmod 755 /Library/Scripts/toggleAirport.sh
+* Run chmod 755 /Library/Scripts/vnc.sh
 * Copy vnc.plist to /Library/LaunchAgents/
 * Run chmod 600 /Library/LaunchAgents/vnc.plist
 *  Run sudo launchctl load /Library/LaunchAgents/vnc.plist to start the watchdog
