@@ -33,7 +33,7 @@ echo "exit 0" >> /etc/rc.local
 ifup usb0
 
 echo "installing tightvnc"
-apt-get -y install tightvnc
+apt-get -y install tightvncserver
 
 echo "configuring tightvnc service"
 touch /etc/systemd/system/tightvncserver.service
