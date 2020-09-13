@@ -51,6 +51,6 @@ echo "[Install]" >> /etc/systemd/system/tightvncserver.service
 echo "WantedBy=multi-user.target" >> /etc/systemd/system/tightvncserver.service
 chown root:root /etc/systemd/system/tightvncserver.service
 chmod 755 /etc/systemd/system/tightvncserver.service
-tightvncserver
+su - pi -c "tightvncserver"
 systemctl start tightvncserver.service
 systemctl enable tightvncserver.service
